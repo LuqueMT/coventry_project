@@ -12,4 +12,8 @@ export default defineConfig({
     port:3001,
     allowedHosts: ['coventry-site.onrender.com']
   }
+<<<<<<< HEAD
 })
+=======
+})
+>>>>>>> 31726e2 (ajuste de allowed port)
