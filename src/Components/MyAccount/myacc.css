@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#container-acct .section-info {
+  display: grid;
+  gap: 1rem;
+}
+#container-acct .section-info .logo-btn {
+  background-color: #0a0909;
+  grid-column: span 3;
+  height: 4rem;
+}
+#container-acct .section-info .logo-btn a {
+  display: flex;
+  font-size: 50px;
+  align-items: center;
+  justify-content: center;
+  font-family: myFont;
+  color: #fff;
+  transition: all 1s ease;
+}
+#container-acct .section-info .logo-btn a:hover {
+  color: rgba(238, 238, 238, 0.87);
+}
+#container-acct .section-info .card-info {
+  background-color: rgba(243, 243, 243, 0.7882352941);
+  grid-column: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0 15px 0 0;
+}
+#container-acct .section-info .card-info img {
+  height: 15rem;
+  border-radius: 50%;
+  box-shadow: 2px 5px 15px rgb(255, 255, 255);
+}
+#container-acct .section-info .card-info h3 {
+  font-size: 40px;
+  font-family: "Times New Roman", Times, serif;
+}
+#container-acct .section-info .card-info h4 {
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+}
+#container-acct .section-info .card-info button {
+  margin-left: 20px;
+  padding: 5px 20px;
+  background-color: rgb(248, 248, 248);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.959);
+  text-decoration: none;
+}
+#container-acct .section-info .card-info button:hover {
+  background-color: #0e0e0e;
+  color: rgb(248, 248, 248);
+  box-shadow: 5px 5px 15px white;
+}
+#container-acct .section-info .sec-form, #container-acct .section-info .more-info {
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  border-radius: 0 10px;
+  padding: 30px;
+  margin: 0 15px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(243, 243, 243, 0.7882352941);
+  grid-column: 2;
+}
+#container-acct .section-info .sec-form header, #container-acct .section-info .more-info header {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  position: relative;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#container-acct .section-info .sec-form header::before, #container-acct .section-info .more-info header::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 3px;
+  width: 100px;
+  border-radius: 8px;
+  background-color: #0a0a0a;
+}
+#container-acct .section-info .sec-form form, #container-acct .section-info .more-info form {
+  position: relative;
+  margin-top: 16px;
+  min-height: 390px;
+}
+#container-acct .section-info .sec-form form .details, #container-acct .section-info .more-info form .details {
+  margin-top: 30px;
+}
+#container-acct .section-info .sec-form form .details .title, #container-acct .section-info .more-info form .details .title {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 6px 0;
+  color: #333;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#container-acct .section-info .sec-form form .details .title.second, #container-acct .section-info .more-info form .details .title.second {
+  margin-top: 2rem;
+}
+#container-acct .section-info .sec-form form .details .fields, #container-acct .section-info .more-info form .details .fields {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  /* From Uiverse.io by krlozCJ */
+}
+#container-acct .section-info .sec-form form .details .fields .input-field, #container-acct .section-info .more-info form .details .fields .input-field {
+  display: flex;
+  width: calc(33.3333333333% - 15px);
+  flex-direction: column;
+  margin: 4px 0;
+}
+#container-acct .section-info .sec-form form .details .fields .input-field input, #container-acct .section-info .more-info form .details .fields .input-field input {
+  outline: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  padding: 0 15px;
+  height: 42px;
+  margin: 8px 0;
+}
+#container-acct .section-info .sec-form form .details .fields .input-field input:is(:focus, :valid), #container-acct .section-info .more-info form .details .fields .input-field input:is(:focus, :valid) {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+}
+#container-acct .section-info .sec-form form .details .fields .input-field input[type=date], #container-acct .section-info .more-info form .details .fields .input-field input[type=date] {
+  color: #707070;
+}
+#container-acct .section-info .sec-form form .details .fields .input-field input[type=date]:valid, #container-acct .section-info .more-info form .details .fields .input-field input[type=date]:valid {
+  color: #333;
+}
+#container-acct .section-info .sec-form form .details .fields .input-field label, #container-acct .section-info .more-info form .details .fields .input-field label {
+  font-size: 15px;
+  font-weight: 500;
+  color: #2e2e2e;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#container-acct .section-info .sec-form form .details .fields .save-btn, #container-acct .section-info .more-info form .details .fields .save-btn {
+  border: none;
+  outline: none;
+  background-color: rgb(248, 248, 248);
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.959);
+  border-radius: 5px;
+  transition: all ease 0.1s;
+  box-shadow: 0px 5px 0px 0px #0c0c0c;
+}
+#container-acct .section-info .sec-form form .details .fields .save-btn :active, #container-acct .section-info .more-info form .details .fields .save-btn :active {
+  transform: translateY(5px);
+  box-shadow: 0px 0px 0px 0px rgba(10, 10, 10, 0.5882352941);
+}
+#container-acct .section-info .more-info {
+  background-color: rgba(243, 243, 243, 0.7882352941);
+  grid-column: 2;
+}
+
+@media screen and (max-width: 768px) {
+  #container-acct .section-info {
+    padding: 20px;
+  }
+  #container-acct .section-info .logo-btn {
+    grid-column: span 3;
+  }
+  #container-acct .section-info .card-info {
+    grid-column: span 3;
+    padding: 20px 0;
+  }
+  #container-acct .section-info .sec-form, #container-acct .section-info .more-info {
+    grid-column: span 3;
+    max-width: 850;
+    width: 100%;
+    padding: 30px;
+    margin: 0 0;
+  }
+  #container-acct .section-info .sec-form form .details .fields, #container-acct .section-info .more-info form .details .fields {
+    /* From Uiverse.io by krlozCJ */
+  }
+  #container-acct .section-info .sec-form form .details .fields .input-field, #container-acct .section-info .more-info form .details .fields .input-field {
+    width: calc(50% - 15px);
+  }
+  #container-acct .section-info .sec-form form .details .fields .save-btn, #container-acct .section-info .more-info form .details .fields .save-btn {
+    border: none;
+    outline: none;
+    background-color: rgb(248, 248, 248);
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.959);
+    border-radius: 5px;
+    transition: all ease 0.1s;
+    box-shadow: 0px 5px 0px 0px #0c0c0c;
+  }
+  #container-acct .section-info .sec-form form .details .fields .save-btn :active, #container-acct .section-info .more-info form .details .fields .save-btn :active {
+    transform: translateY(5px);
+    box-shadow: 0px 0px 0px 0px rgba(10, 10, 10, 0.5882352941);
+  }
+  /*form{
+      overflow-y: scroll;
+      .fields{
+          .input-field{
+          width: calc(100% / 2 - 15px);
+          }
+      }
+  }
+  form::-webkit-scrollbar{
+      display: none;
+  }*/
+}
+@media screen and (max-width: 480px) {
+  .section-info {
+    display: grid;
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .section-info {
+    display: grid;
+    gap: 1rem;
+  }
+  .section-info .sec-form form .details .fields, .section-info .more-info form .details .fields {
+    /* From Uiverse.io by krlozCJ */
+  }
+}/*# sourceMappingURL=myacc.css.map */

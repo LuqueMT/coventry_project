@@ -1,0 +1,35 @@
+.container-Home {
+    margin-top: 5%;
+    .sec-home .carousel.slide .carousel-inner{
+    height: 700px;
+        .carousel-item {
+            padding-left: 21%;
+            img{
+                height: 55rem;
+                width: 70rem;
+            }
+        }
+    }
+    @media  screen and (max-width:768px){
+        .sec-home{
+            .carousel.slide{
+                .carousel-inner{
+                    .carousel-item{
+                        padding-left: 15%;
+                        justify-content: center;
+                        align-items: center;
+                        img{
+                            height: 600px;
+                            width: 70vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media  screen and (max-width:480px){
+    .container-Home{
+        display: none;
+    }
+}

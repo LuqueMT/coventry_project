@@ -1,0 +1,102 @@
+.container-carOptions {
+  width: 100%;
+  background-color: #000000;
+}
+.container-carOptions .sec-opt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 30px;
+}
+.container-carOptions .sec-opt .card_container {
+  margin: auto;
+  width: 100%;
+}
+.container-carOptions .sec-opt .card_container .product-card {
+  margin-top: 20px;
+  height: 600px;
+}
+.container-carOptions .sec-opt .card_container .product-card .product-image {
+  position: relative;
+  width: 100%;
+  height: 590px;
+  overflow: hidden;
+}
+.container-carOptions .sec-opt .card_container .product-card .product-image .discount-tag {
+  position: absolute;
+  background: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  color: rgb(7, 7, 7);
+  right: 10px;
+  top: 10px;
+  text-transform: capitalize;
+}
+.container-carOptions .sec-opt .card_container .product-card .product-image .product-thumb {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container-carOptions .sec-opt .card_container .product-card .product-image .card-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  width: 90%;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  background: #fff;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  opacity: 0;
+}
+.container-carOptions .sec-opt .card_container .product-card .product-image .card-btn:hover {
+  background: #272727;
+  color: #fff;
+}
+.container-carOptions .sec-opt .card_container .product-card .product-info {
+  width: 100%;
+  height: 100%;
+  padding-top: 10px;
+  display: block;
+}
+.container-carOptions .sec-opt .card_container .product-card .product-info .product-brand {
+  text-transform: uppercase;
+  font-size: 28px;
+  color: #c9c7c7;
+}
+.container-carOptions .sec-opt .card_container .product-card .product-info .product-short-description {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  opacity: 70%;
+  color: #c9c7c7;
+  text-transform: capitalize;
+  margin: 5px 0;
+}
+.container-carOptions .sec-opt .card_container .product-card .product-info .price {
+  font-weight: 600;
+  font-size: 20px;
+}
+.container-carOptions .sec-opt .card_container .product-card .product-info .actual-price {
+  margin-left: 20px;
+  opacity: 1;
+  text-decoration: line-through;
+}
+.container-carOptions .sec-opt .card_container .product-card:hover .card-btn {
+  opacity: 1;
+}
+
+.slick-slide > div {
+  margin: 0 1rem 1rem 1rem;
+}
+
+.slick-dots {
+  background-color: #c9c7c7;
+  position: static !important;
+}/*# sourceMappingURL=carOptions.css.map */

@@ -1,0 +1,159 @@
+/*@font-face {
+    font-family: myFont;
+    src: url(https://github.com/LuqueMT/coventry.code.font.git);
+}*/
+a h1 {
+  font-family: myFont;
+  color: white;
+}
+
+.container1 .navBarSection {
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 4%;
+  margin: 10px;
+  gap: 10px;
+}
+.container1 .navBarSection .logo {
+  grid-column: 1;
+  cursor: pointer;
+  margin-right: auto;
+}
+.container1 .navBarSection .logo .logoimage {
+  display: none;
+}
+.container1 .navBarSection .logo a {
+  font-family: myFont;
+  color: white;
+  font-size: 2rem;
+  margin-left: 1%;
+  padding-left: 1%;
+}
+.container1 .navBarSection .navBar {
+  grid-column: 2;
+}
+.container1 .navBarSection .navBar ul.nav__links {
+  list-style: none;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 0;
+}
+.container1 .navBarSection .navBar ul.nav__links .form-search .input_group {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.0745098039);
+  border-radius: 4px;
+  transition: all 0.5s;
+  font-family: "Times New Roman", Times, serif;
+}
+.container1 .navBarSection .navBar ul.nav__links .form-search .input_group input {
+  all: unset;
+  padding: 2px;
+  height: 2rem;
+  width: 30rem;
+}
+.container1 .navBarSection .navBar ul.nav__links .form-search .input_group:hover {
+  background-color: white;
+}
+.container1 .navBarSection .navBar ul.nav__links li {
+  display: inline-block;
+  padding: 2px 20px;
+  align-items: center;
+  text-align: center;
+}
+.container1 .navBarSection .navBar ul.nav__links li a {
+  position: relative;
+  text-decoration: none;
+  font-family: "Times New Roman", Times, serif;
+  color: #e6e5e5;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding: 0 10px;
+}
+.container1 .navBarSection .navBar ul.nav__links li a:after {
+  content: "";
+  position: absolute;
+  background-color: #e8e8e8;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+.container1 .navBarSection .navBar ul.nav__links li a:hover:after {
+  width: 100%;
+}
+.container1 .navBarSection a.cta {
+  grid-column: 3;
+}
+.container1 .navBarSection a.cta button {
+  margin: 0;
+  padding: 5px 20px;
+  background-color: rgb(248, 248, 248);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.container1 .navBarSection a.cta button:hover {
+  background-color: rgba(255, 255, 255, 0.0745098039);
+  color: rgb(248, 248, 248);
+}
+.container1 .navBarSection li, .container1 .navBarSection a {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+  font-size: 25px;
+  color: rgb(248, 248, 248);
+  text-decoration: none;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .container1 {
+    margin: 0 5px;
+    padding: 5px;
+  }
+  .container1 .navBarSection {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    padding: 25px 1%;
+    margin: 5px;
+  }
+  .container1 .navBarSection .logo .logof {
+    display: none;
+  }
+  .container1 .navBarSection .logo .logoimage {
+    display: flex;
+    margin: 0 5px 0 0;
+  }
+  .container1 .navBarSection .logo .logoimage h1 {
+    font-size: 60px;
+    color: white;
+    font-family: myFont;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container1 {
+    margin: 0;
+    padding: 0;
+  }
+  .container1 .navBarSection {
+    display: none;
+  }
+}/*# sourceMappingURL=navbar.css.map */

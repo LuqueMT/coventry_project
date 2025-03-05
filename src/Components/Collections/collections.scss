@@ -1,0 +1,301 @@
+@font-face {
+    font-family: myFont;
+    src: url('https://github.com/LuqueMT/coventry.code.font/blob/581720a9a72f57b54b3f8e1edf6283f450110e18/Coventry.otf') format('otf'),
+         url('https://github.com/LuqueMT/coventry.code.font/blob/581720a9a72f57b54b3f8e1edf6283f450110e18/Coventry.woff2') format('woff2');
+}
+
+.container-collections {
+    .section-collections {
+        .section-img {
+            .img-cole {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+                margin: 5rem;
+
+                .content-colection {
+                    display: flex;
+
+                    .content-image {
+                        position: relative;
+
+                        img.img-prev {
+                            width: 840px;
+                            height: 930px;
+                            display: block;
+
+                        }
+
+                        .info-colection {
+                            width: 100%;
+                            height: 30%;
+                            bottom: 0;
+                            position: absolute;
+                            color: rgba(255, 255, 255, 0.753);
+                            background: rgba(0, 0, 0, 0.6);
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            transition: all 2s ease;
+                            letter-spacing: 1px;
+
+                            h2 {
+                                font-family: myFont;
+                                font-size: 50px;
+                            }
+
+                            h3 {
+                                font-family: 'Times New Roman', Times, serif;
+                                font-size: 40px;
+                            }
+
+                            a {
+                                font-family: 'Times New Roman', Times, serif;
+                                font-size: 30px;
+                            }
+
+                            p {
+                                font-family: 'Times New Roman', Times, serif;
+                                font-size: 25px;
+                            }
+                        }
+
+                        .info-colection:hover {
+                            background: rgba(0, 0, 0, 0.747);
+                            color: rgba(255, 255, 255, 0.863);
+
+                            a:hover {
+                                text-decoration: 2px underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .section-about {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+            background: linear-gradient(to right, rgba(231, 231, 231, 0.863), rgba(77, 77, 77, 0.836));
+            height: 15rem;
+
+            .text-about {
+                border: 3px solid white;
+                border-radius: 0 20px;
+                width: 60rem;
+                height: 10rem;
+                background: rgba(7, 7, 7, 0.877);
+                transition: all 1s ease 0s;
+
+                h3 {
+                    color: white;
+                    text-align: center;
+                    font-family: 'Times New Roman', Times, serif;
+                    margin-top: 10px;
+                }
+
+                p {
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    text-align: center;
+                    justify-content: center;
+                    margin: 1rem;
+                    letter-spacing: 1px;
+                    color: rgba(231, 231, 231, 0.863);
+                }
+            }
+
+            .text-about:hover {
+                box-shadow: 1px 1px 10px white;
+                width: 62rem;
+                height: 11rem;
+            }
+        }
+
+        .conteudo-masculino {
+            display: grid;
+            flex-direction: column;
+            grid-template-columns: repeat(4, 1fr);
+            justify-content: center;
+            align-items: center;
+            margin: 1rem;
+            gap: 2rem;
+        }
+
+        .conteudo-masculino {
+            justify-items: center;
+
+            .card {
+                width: 18rem;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 10px;
+
+                .card-body {
+                    .card-text {
+                        font-size: 14px;
+                    }
+
+                    a.cta {
+                        margin: 0 0 0 9%;
+                        padding: 6px 15px;
+                        background-color: rgb(248, 248, 248);
+                        border: none;
+                        border-radius: 50px;
+                        cursor: pointer;
+                        transition: all 0.3s ease 0s;
+                        font-family: sans-serif;
+                        font-weight: 500;
+                        font-size: 16px;
+                        color: rgb(0, 0, 0);
+                        text-decoration: none;
+                    }
+
+                    a.cta:hover {
+                        background-color: rgba(0, 0, 0, 0.8);
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.container-collections {
+    .section-collections {
+        @media screen and (max-width:768px) {
+            .section-img{
+                .img-cole{
+
+                }
+            }
+            .conteudo-masculino{
+                display: grid;
+                flex-direction: column;
+                grid-template-columns: repeat(2, 1fr);
+                justify-content: center;
+                align-items: center;
+                gap: 2rem;
+                margin-bottom: 5px;
+
+                .card {}
+            }
+
+            .colection-prev {
+                display: flex;
+                flex-direction: column;
+
+                .content-colection {
+                    display: none;
+                }
+
+                .content-colection-mobile {
+                    display: inline-block;
+                }
+
+                .text-info-colection {
+                    display: none;
+                }
+
+                .text-info-colection-mobile {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: rgba(255, 255, 255, 0.884);
+                    ;
+                    box-shadow: 0 -5px 10px #c5c5c5de;
+                    opacity: 95%;
+
+                    h2 {
+                        font-style: italic;
+                        color: black;
+                        text-align: center;
+                        font-family: 'Times New Roman', Times, serif;
+                        text-transform: none;
+                        text-decoration: underline #18181a;
+                        font-size: 60px;
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width:480px) {
+            .section-img{
+                .img-cole{
+                    grid-template-columns: repeat(1, 1fr);
+                    margin: 1rem;
+                    justify-items: center;
+                    .content-colection{
+                        .content-image{
+                            img.img-prev{
+                                width: 420px;
+                                height: 465px;
+                            }
+                            .info-colection{
+
+                            }
+                        }
+                    }
+                }
+            }
+            .section-about{
+                .text-about{
+                    height: 12rem;
+                    width: 28rem;
+                    p{
+                        height: 100%;
+                        font-size: 15px;
+                    }
+                }
+
+            }
+            .conteudo-masculino {
+                grid-template-columns: repeat(2, 2fr);
+                gap: 1rem;
+
+                .card {
+                    width: 100%;
+
+                    .card-body {
+                        a.cta {
+                            margin: 5px 0;
+                            padding: 6px 14px;
+                            display: flex;
+                            justify-content: center;
+                            background-color: rgb(241, 241, 241);
+                            border-radius: 0;
+                            font-family: 'Times New Roman', Times, serif;
+                            font-style: italic;
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+
+            .colection-prev {
+                margin: 0;
+
+                .content-colection-mobile {
+                    .content-image {
+                        margin: 0;
+                        padding: 0;
+
+                        img {
+                            max-height: 30rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:480px) {
+    .container-collections {
+        margin: 0;
+        padding-bottom: 5%;
+    }
+}

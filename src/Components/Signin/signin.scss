@@ -1,0 +1,122 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*@font-face{
+    font-family: myFont;
+    src: url(../fonts/Coventry.otf);
+}*/
+.container-signin{
+    display: grid;
+    .sec-Signin{
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: url(../../assets/cidade.png);
+        background-size: cover;
+        background-position: center;
+        padding: 20px 50px;
+        .wrapper{
+            width: 70%;
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+            gap: 300px;
+            color: white;
+            border-radius: 10px;
+            padding: 30px 40px;
+            form{
+                background-color: #00000070;
+                border-radius: 20px;
+                padding: 30px;
+                h1{
+                    font-size: 36px;
+                    text-align: center;
+                }
+                .input-box{
+                    position: relative;
+                    width: 100%;
+                    height: 50px;
+                    margin: 30px 0;
+                    input{
+                        width: 100%;
+                        height: 100%;
+                        background: transparent;
+                        border: navajowhite;
+                        outline: navajowhite;
+                        border: 2px solid rgba(255, 255, 255, .2);
+                        border-radius: 40px;
+                        font-size: 16px;
+                        color: #fff;
+                        padding: 20px 45px 20px 20px;
+                    }
+                    input::placeholder{
+                        color: #fff;
+                    }
+                }
+                .remember-forgot{
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 14.5px;
+                    margin: -15px 0 15px;
+                    label{
+                        input{
+                            accent-color: #fff;
+                            margin-right: 3px;
+                        }
+                    }
+                    a{
+                        color: #fff;
+                        text-decoration: none;
+                    }
+                    a:hover{
+                        text-decoration: underline;
+                    }
+                }
+                button{
+                    width: 100%;
+                    height: 45px;
+                    background: #fff;
+                    border: none;
+                    outline: none;
+                    border-radius: 40px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+                    cursor: pointer;
+                    font-size: 16px;
+                    color: black;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    section.header-nav{
+        header{
+            .nav-s{
+                display: flex;
+                justify-content: center;
+                a{
+                    font-size: 50px;
+                    font-family: myFont;
+                    color: #fff;
+                    margin: 1rem;
+                }
+            }
+
+        }
+    }
+}
+@media screen and (max-width:768px){
+    .container-signin{
+        margin: 0;
+        padding: 0;
+        .sec-Signin{
+            display: flex;
+            .wrapper{
+                grid-template-columns: repeat(1, 1fr);
+                gap: 1rem;
+            }
+        }
+    }
+}

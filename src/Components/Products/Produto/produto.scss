@@ -1,0 +1,389 @@
+* {
+    box-sizing: border-box;
+}
+
+html::-webkit-scrollbar {
+    width: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: black;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background-color: white;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: rgb(68, 67, 67);
+}
+
+html::-webkit-scrollbar-track:hover {
+    background-color: rgb(10, 10, 10);
+}
+
+.container-produto {
+    background: #000000c5;
+
+    .section-produto {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        margin: 2rem 1rem 1rem 5rem;
+
+        .prev-img-prod {
+            width: 1rem;
+            display: grid;
+
+            .img-prin {
+                grid-column: span 3;
+
+                img.card-img-top {
+                    width: 45rem;
+                    height: 50rem;
+                    box-shadow: 8px 8px 5px rgba(139, 139, 139, 0.514);
+                }
+            }
+
+            .img-sec {
+                grid-column: span 3;
+                display: flex;
+                padding-top: 15px;
+                justify-content: space-between;
+
+                img.card-img-small {
+                    width: 10rem;
+                    height: 10rem;
+                    transition: all 0.5s ease;
+                }
+
+                img.card-img-small:hover {
+                    box-shadow: 1px 1px 12px white;
+                    border-radius: 20px;
+                }
+            }
+        }
+
+        .detalhes {
+            height: 50rem;
+            width: 34rem;
+
+            h2 {
+                color: white;
+                text-align: left;
+                font-size: 50px;
+                letter-spacing: 1px;
+            }
+
+            p {
+                color: rgb(175, 175, 175);
+                text-align: left;
+                font-size: 20px;
+                letter-spacing: 1px;
+            }
+
+            .define {
+                .cta-size {
+                    margin: 1% 1% 5% 1%;
+                    padding: 10px 40px;
+                    background-color: rgb(248, 248, 248);
+                    border: none;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    transition: all 0.3s ease 0s;
+                    font-family: sans-serif;
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: rgb(0, 0, 0);
+                    text-decoration: none;
+                }
+
+                .cta-size:hover {
+                    background-color: rgba(26, 26, 26, 0.8);
+                    color: white;
+                }
+            }
+
+            .finalizar {
+                button.cta-2 {
+                    margin: 10px 10px 1px 1px;
+                    padding: 10px 20px;
+                    background-color: rgb(248, 248, 248);
+                    border: none;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    transition: all 0.3s ease 0s;
+                    font-family: sans-serif;
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: rgb(0, 0, 0);
+                    text-decoration: none;
+                }
+
+                button.cta-2:hover {
+                    background-color: rgba(26, 26, 26, 0.8);
+                    color: white;
+                }
+
+            }
+
+            .colors {
+                display: flex;
+                margin: 1rem 1rem 1rem 1rem;
+                align-items: center;
+                justify-content: center;
+                justify-items: center;
+                height: 50px;
+                transition: all 0.3s ease 0s;
+
+                .cta-branco {
+                    height: 40px;
+                    width: 50px;
+                    background-color: rgb(248, 248, 248);
+                    border: none;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    transition: all 0.3s ease 0s;
+                    font-family: sans-serif;
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: rgb(0, 0, 0);
+                    text-decoration: none;
+                }
+
+                .cta-preto {
+                    margin: 0 0 0 9%;
+                    height: 40px;
+                    width: 50px;
+                    background-color: rgb(19, 19, 19);
+                    border: none;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    transition: all 0.3s ease 0s;
+                    font-family: sans-serif;
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: rgb(255, 255, 255);
+                    text-decoration: none;
+
+                }
+
+                .cta-azul {
+                    margin: 0 0 0 9%;
+                    height: 40px;
+                    width: 50px;
+                    background-color: rgb(15, 11, 228);
+                    border: none;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    transition: all 0.3s ease 0s;
+                    font-family: sans-serif;
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: rgb(248, 248, 248);
+                    text-decoration: none;
+                }
+
+                button:hover {
+                    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.836);
+                }
+            }
+
+            .opt-entrega {
+                h3 {
+                    color: #ffffffc7;
+                }
+
+                .entrega-info {
+                    padding: 20px 30px;
+
+                    h4 {
+                        color: #ffffffc7;
+                    }
+
+                    p {
+                        color: #ffffffc7;
+                        opacity: 80%;
+                    }
+                }
+
+                .entrega-frete {
+                    margin: 10px 0;
+
+                    .opt-entrega-sec {
+                        margin: 10px 0;
+                        width: 100%;
+                        height: 5rem;
+                        box-shadow: 1px 1px 4px #e9e9e9;
+                        display: grid;
+                        background-color: #1b1b1b67;
+
+                        h4 {
+                            padding: 5px 20px;
+                            grid-column: span 3;
+                            color: #ffffffc5;
+                        }
+
+                        p {
+                            padding: 1px 20px;
+                            grid-column: 1;
+                        }
+
+                        input {
+                            display: flex;
+                            height: 20px;
+                            width: 20px;
+                            grid-column: 3;
+                        }
+
+                        .checkmark {
+                            height: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.container-produto{
+    @media screen and (max-width:768px) {
+        .section-produto{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 2rem;
+            margin: 2rem 1rem 1rem 5rem;
+            .prev-img-prod{
+                .img-prin{
+                    img{
+
+                    }
+                }
+                .img-sec{
+                    img{
+
+                    }
+                }
+            }
+            .detalhes{
+                .define{
+                    p{
+
+                    }
+                    button{
+
+                    }
+                }
+                p{
+
+                }
+                .colors{
+                    button{
+
+                    }
+                }
+                .opt-entrega{
+                    h4{
+
+                    }
+                    p{
+
+                    }
+                    input{
+
+                    }
+                    .checkmark{
+
+                    }
+                }
+                .finalizar{
+                    .cta-2{
+
+                    }
+                }
+            }
+        }
+        
+    }
+    @media screen and (max-width:480px) {
+        .section-produto{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 2rem;
+            margin: 0 1rem;
+            .prev-img-prod{
+                width: 0;
+                .img-prin{
+                    padding-top: 1.5rem;
+                    padding-left: 1rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img.card-img-top{
+                        width:25rem;
+                        height: 27rem;
+                    }
+                }
+                .img-sec{
+                    justify-content: center;
+                    padding-left: 1rem;
+                    gap: 1rem;
+                    img.card-img-small{
+                        width: 8rem;
+                        height: 8rem;
+                    }
+                }
+            }
+            .detalhes{
+                height:100% ;
+                width: 100%;
+                .define{
+                    p{
+
+                    }
+                    button{
+
+                    }
+                }
+                p{
+
+                }
+                .colors{
+                    button{
+
+                    }
+                }
+                .opt-entrega{
+                    h3{
+
+                    }
+                    .entrega-info{
+
+                    }
+                    .entrega-frete{
+                        .opt-entrega-sec{
+                            h4{
+        
+                            }
+                            p{
+        
+                            }
+                            input{
+        
+                            }
+                            .checkmark{
+        
+                            }
+                        }
+                    }
+                }
+                .finalizar{
+                    .cta-2{
+
+                    }
+                }
+            }
+        }
+        
+    }
+}
