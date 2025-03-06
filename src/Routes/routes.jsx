@@ -9,7 +9,7 @@ import Collections from '../Components/Collections/Collections';
 import MyAccount from '../Components/MyAccount/MyAccount';
 function AppRoutes(){
     return(
-        <BrowserRouter>
+        <BrowserRouter basename='/coventry_project'>
             <Routes>
                 <Route path='/' element={<Home/>}></Route>
                 <Route path='signin' element={<Signin/>}></Route>
