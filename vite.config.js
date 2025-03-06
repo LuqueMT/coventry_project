@@ -6,5 +6,5 @@ export default defineConfig({
   plugins: [react()],
   build:{
     target:"esnext"},
-  base:"/coventry_site",
+  base:"/coventry_project",
   });
